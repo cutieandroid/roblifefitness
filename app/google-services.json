@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "425519321901",
+    "project_id": "rob-life-fitness-and-diet",
+    "storage_bucket": "rob-life-fitness-and-diet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425519321901:android:a218faa72a506ff46039a4",
+        "android_client_info": {
+          "package_name": "com.example.rob_lifefitnessdiet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425519321901-c6o7btje89m1b59qn33os0f3ir4sa5lg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rob_lifefitnessdiet",
+            "certificate_hash": "b4c3010edfd9916b5903f364d5067bb5142ab1fa"
+          }
+        },
+        {
+          "client_id": "425519321901-g90vird3nvvhfuhebctpgqkjjfluocn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACDYEYaPjPcpa02QcSa1SQLqHW9Le_bH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425519321901-g90vird3nvvhfuhebctpgqkjjfluocn6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
