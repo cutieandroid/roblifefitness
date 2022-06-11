@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/roundback"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/verifyemailtextview"
-        android:layout_width="248dp"
-        android:layout_height="98dp"
-        android:text="Your email isn't verified ,please verify your email to continue.                   Logout and login again to refresh the status"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.327"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundback"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/verify"
-        android:layout_width="79dp"
-        android:layout_height="20dp"
-        android:background="@drawable/buttonround"
-        android:gravity="center"
-        android:text="verify"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toEndOf="@+id/verifyemailtextview"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <include layout="@layout/main_toolbar" />
+
+        <ImageView
+            android:id="@+id/fitnesstest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cardbackground"
+            android:foregroundTint="#00BCD4"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="clickbmitest"
+            android:tint="#00BCD4"
+            app:srcCompat="@drawable/removvedbgimagetext" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/supportActionButton"
+            android:layout_width="76dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="100dp"
+            android:clickable="true"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="clicksupport"
+            android:visibility="visible"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+
+        <include layout="@layout/main_navigation_bar" />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

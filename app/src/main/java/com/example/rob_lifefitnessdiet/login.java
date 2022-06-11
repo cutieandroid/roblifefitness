@@ -23,7 +23,15 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class login extends AppCompatActivity {
+public class
+
+
+
+
+
+
+
+login extends AppCompatActivity {
     private boolean passwordshowing=false;
     FirebaseAuth firebaseAuth;
     AlertDialog.Builder reset_alert;
@@ -130,7 +138,7 @@ public class login extends AppCompatActivity {
                 firebaseAuth.signInWithEmailAndPassword(email,Password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
-                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                        startActivity(new Intent(login.this,emilyverification.class));
 
                     }
                 }).addOnFailureListener(new OnFailureListener() {
@@ -150,7 +158,7 @@ public class login extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         if(FirebaseAuth.getInstance().getCurrentUser()!=null){
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            startActivity(new Intent(login.this,emilyverification.class));
         }
 
 

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rob_lifefitnessdiet">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,58 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RobLifeFitnessDiet">
+        <activity
+            android:name=".weightmaintain"
+            android:exported="false" />
+        <activity
+            android:name=".weightloss"
+            android:exported="false" />
+        <activity
+            android:name=".weightgain"
+            android:exported="false" />
+        <activity
+            android:name=".armworkouts"
+            android:exported="false" />
+        <activity
+            android:name=".cardio"
+            android:exported="false" />
+        <activity
+            android:name=".Shoulderworkout"
+            android:exported="false" />
+        <activity
+            android:name=".backworkout"
+            android:exported="false" />
+        <activity
+            android:name=".support"
+            android:exported="false" />
+        <activity
+            android:name=".legsworkouts"
+            android:exported="false" />
+        <activity
+            android:name=".absworkouts"
+            android:exported="false" />
+        <activity
+            android:name=".chestworkouts"
+            android:exported="false" />
+        <activity
+            android:name=".bmiactivit"
+            android:exported="false" />
+        <activity
+            android:name=".bmitest"
+            android:exported="false" />
+        <activity
+            android:name=".emilyverification"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".aboutus"
+            android:exported="false" />
+        <activity
+            android:name=".nutritions"
+            android:exported="false" />
+        <activity
+            android:name=".workouts"
+            android:exported="false" />
         <activity
             android:name=".login"
             android:exported="false" />
