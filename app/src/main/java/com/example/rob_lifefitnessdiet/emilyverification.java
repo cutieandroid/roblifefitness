@@ -18,8 +18,14 @@ public class emilyverification extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_emilyverification);
         auth=FirebaseAuth.getInstance();
+       /* if(auth.getCurrentUser().isEmailVerified())
+        {
+            Intent intenetnew= new Intent(emilyverification.this,MainActivity.class);
+            startActivity(intenetnew);
+        }*/
+        setContentView(R.layout.activity_emilyverification);
+
 
 
 
@@ -58,13 +64,15 @@ public class emilyverification extends AppCompatActivity {
             }
         });
     }
+
     @Override
     protected void onStart() {
         super.onStart();
-        if(FirebaseAuth.getInstance().getCurrentUser().isEmailVerified()){
-            startActivity(new Intent(emilyverification.this,MainActivity.class));
+        if(auth.getCurrentUser().isEmailVerified())
+        {
+            Intent intenetnew= new Intent(emilyverification.this,MainActivity.class);
+            startActivity(intenetnew);
         }
-
-
     }
 }
+

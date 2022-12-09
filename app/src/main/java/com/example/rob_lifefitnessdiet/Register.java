@@ -139,8 +139,16 @@ public class Register extends AppCompatActivity {
                 fauth.createUserWithEmailAndPassword(emailid,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
-                        startActivity(new Intent(getApplicationContext(),emilyverification.class));
-                        finish();
+
+
+                        fauth.signInWithEmailAndPassword(emailid,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                            @Override
+                            public void onSuccess(AuthResult authResult) {
+                                startActivity(new Intent(getApplicationContext(),emilyverification.class));
+                                finish();
+                            }
+                        });
+
 
                     }
                 }).addOnFailureListener(new OnFailureListener() {
